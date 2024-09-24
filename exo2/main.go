@@ -1,9 +1,19 @@
 package main
 
-func Ft_missing(nums []int) int {
-	for i := len(nums) - 1; i >= 0; i-- {
+import "fmt"
 
+func Ft_missing(nums []int) int {
+
+	n := len(nums)
+	total := (n * (n + 1)) / 2
+	somme := 0
+
+	for _, num := range nums {
+		somme += num
 	}
+
+	fmt.Println(total - somme)
+	return total - somme
 }
 
 func main() {
