@@ -15,7 +15,7 @@ func Ft_profit(prices []int) int {
 		}
 	}
 	fmt.Println(maxP)
-	return 0
+	return maxP
 }
 
 func main() {
